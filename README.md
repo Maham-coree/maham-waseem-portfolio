@@ -52,3 +52,4 @@ This is a static website built with HTML, CSS, and JavaScript. Open `index.html`
 
 ---
 Built with HTML, CSS and JavaScript.
+
