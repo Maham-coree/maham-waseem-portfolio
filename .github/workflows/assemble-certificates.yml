@@ -1,0 +1,36 @@
+name: Assemble certificate PDF
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "certificate-parts/READY"
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Rebuild the scanned PDF from temporary base64 parts
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f certificate-parts/READY
+          cat certificate-parts/part-*.b64 | tr -d ' \r\n' | base64 --decode > assets/certificates/certificates.pdf
+          test "$(wc -c < assets/certificates/certificates.pdf)" -gt 50000
+          test "$(head -c 5 assets/certificates/certificates.pdf)" = "%PDF-"
+          rm -rf certificate-parts
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f assets/certificates/certificates.pdf
+          git add -A certificate-parts
+          git commit -m "Add complete six-page certificate scans"
+          git push origin HEAD:main
