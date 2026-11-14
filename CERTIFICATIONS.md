@@ -1,6 +1,6 @@
 # Certifications
 
-The six-page certificate scan supplied for this portfolio contains the following certificates. Certificate names, providers, and dates below are transcribed from the scans.
+The six-page certificate scan supplied for this portfolio contains the following certificates. Names, providers, and dates below are transcribed from the supplied scans.
 
 | Certificate | Issuer / Provider | Date shown |
 |---|---|---|
@@ -13,13 +13,12 @@ The six-page certificate scan supplied for this portfolio contains the following
 
 ## Course coverage shown on the AllDotDev certificate
 
-The certificate states that the course covered cross-platform UI development, Dart programming, state management, and API integration.
+The certificate states that the course covered cross-platform UI development, Dart programming, state management, and API integration. These are listed on the portfolio as coursework exposure rather than expert-level proficiency.
 
 ## Original scanned PDF
 
-The original six-page PDF is intended to be stored at:
+The prepared six-page scanned PDF belongs at:
 
 `assets/certificates/certificates.pdf`
 
-The GitHub connection available in this session can create and update text files, but it does not expose a direct binary-file upload action. The supplied PDF therefore still needs to be uploaded to that path manually. Until then, this page and the website link to this certificate list rather than a missing PDF.
-
+The PDF is not yet present in the GitHub repository because the connected GitHub file tool can create text files but cannot upload local binary files directly. Upload the provided PDF through **Add file → Upload files** in GitHub, placing it inside `assets/certificates/` with the exact name `certificates.pdf`. The certificate cards on the portfolio already point to the corresponding PDF page.
