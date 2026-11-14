@@ -1,6 +1,6 @@
 # Certifications
 
-The following certificates were included in the six-page scanned PDF supplied for this portfolio. The original scans are preserved in [assets/certificates/certificates.pdf](assets/certificates/certificates.pdf).
+The six-page certificate scan supplied for this portfolio contains the following certificates. Certificate names, providers, and dates below are transcribed from the scans.
 
 | Certificate | Issuer / Provider | Date shown |
 |---|---|---|
@@ -11,8 +11,15 @@ The following certificates were included in the six-page scanned PDF supplied fo
 | Effective Leadership | Deloitte WorldClass | 14 November 2026 |
 | App Development Course (Batch 01) | AllDotDev | Saturday, 1 August (year not shown) |
 
-## Notes
+## Course coverage shown on the AllDotDev certificate
 
-- Certificate details are transcribed from the supplied scans.
-- The AllDotDev certificate does not show a year beside its date.
-- No external verification links were included in the supplied PDF.
+The certificate states that the course covered cross-platform UI development, Dart programming, state management, and API integration.
+
+## Original scanned PDF
+
+The original six-page PDF is intended to be stored at:
+
+`assets/certificates/certificates.pdf`
+
+The GitHub connection available in this session can create and update text files, but it does not expose a direct binary-file upload action. The supplied PDF therefore still needs to be uploaded to that path manually. Until then, this page and the website link to this certificate list rather than a missing PDF.
+
