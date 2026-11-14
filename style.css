@@ -22,3 +22,6 @@ nav a:hover::after,nav a.is-active::after{right:0}
 @keyframes cardFloat{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(-10px) rotate(2.5deg)}}
 @keyframes tagFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+.cert-link{display:inline-block;margin-top:12px;font-size:.72rem;font-weight:700;color:var(--accent)}
+.cert-link:hover{text-decoration:underline}
