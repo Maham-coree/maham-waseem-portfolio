@@ -107,6 +107,9 @@
   // Sticky header state.
   const updateScrollState = () => {
     if (header) header.classList.toggle("is-scrolled", window.scrollY > 12);
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    if (header) header.style.setProperty("--scroll-progress", progress + "%");
   };
   updateScrollState();
   window.addEventListener("scroll", updateScrollState, { passive: true });
