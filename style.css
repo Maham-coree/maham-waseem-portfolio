@@ -210,3 +210,83 @@ footer .brand{color:#fff}
 .thermo-curve{color:#7867c8;min-width:0}
 .thermo-curve svg{width:100%;display:block;overflow:visible}
 .thermo-curve small{display:block;text-align:right}
+
+
+/* MIDNIGHT NAVY EDITION — full dark interface, not a light page with lavender accents */
+:root{
+  color-scheme:dark;
+  --ink:#f1f3ff;
+  --muted:#b0b8ce;
+  --paper:#0b1020;
+  --white:#151d32;
+  --line:#2b3550;
+  --accent:#b8a8ff;
+  --accent-dark:#9b87f5;
+  --soft:#252443;
+  --navy:#080d1b;
+  --navy-2:#111a30;
+  --cyan:#b8a8ff;
+  --shadow:0 20px 50px rgba(0,0,0,.28);
+}
+html,body{background:#0b1020;color:#f1f3ff}
+body{background:var(--paper);color:var(--ink)}
+.site-header{background:rgba(10,15,30,.94);border-color:#29334d;box-shadow:0 8px 28px rgba(0,0,0,.2)}
+.site-header.is-scrolled{box-shadow:0 10px 34px rgba(0,0,0,.34)}
+.primary-navigation a,.header-cta{color:#c2c9dc}
+.header-cta{border-color:#39435e;background:#121a2e}
+.hero{background:radial-gradient(circle at 78% 40%,rgba(143,124,226,.16),transparent 30%),linear-gradient(112deg,#0b1122 54%,#111a31 54%)}
+.hero:before{background-image:linear-gradient(rgba(174,160,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(174,160,255,.055) 1px,transparent 1px)}
+.hero-intro,.hero-foot{color:#9ba6c1}
+.lead,.about-text,.section-heading p:not(.overline),.skill-card p,.project-content>p,.project-details>div,.education-note,.education-card p,.experience-card>p,.experience-work ul,.cert-card small{color:var(--muted)}
+.social-row{color:#aeb7ce}.social-row a{color:#f1f3ff}
+.btn.secondary{background:#151e34;border-color:#414b68;color:#f0f2ff}
+.btn.secondary:hover{background:#252443;border-color:var(--accent);color:var(--accent)}
+.profile-card,.hero-monogram{background:linear-gradient(145deg,#20264a,#0a1226);border-color:#394366;box-shadow:0 30px 75px rgba(0,0,0,.45)}
+.monogram{color:#e6e2ff}.card-top,.card-bottom small,.monogram-label{color:#b2b8d4}
+.orbit,.math-orbit{border-color:#554c83}.floating-tag,.float-chip{background:#1a2340;color:#e8eaff;border-color:#3b4566;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+.about-section,.projects-section,.experience-section{background:#10182b}
+.skills-section,.education-section{background:#0d1426}
+.certifications-section{background:#111a2e}
+.section h2,.contact-section h2{color:#f1f3ff}
+.about-principles strong,.skill-card h3,.cert-card h3,.project-content h3,.project-details h4,.education-card h3,.education-card .institution,.experience-card h3,.experience-work strong{color:#f0f2ff}
+.about-principles article{border-color:#a998f5}
+.skill-card,.project-card,.education-card,.experience-card,.cert-card{background:#151f35;border-color:#303b58;box-shadow:0 8px 28px rgba(0,0,0,.18)}
+.skill-card:hover,.cert-card:hover,.project-card:hover{border-color:#7668b7;box-shadow:0 20px 42px rgba(0,0,0,.34)}
+.skill-icon,.education-icon{background:#29264b;color:#c0b3ff}
+.project-filters .filter-button{background:#151f35;border-color:#3a4563;color:#c4cbe0}
+.filter-button:hover,.filter-button.is-selected{background:#a998f5;color:#101528;border-color:#a998f5}
+.project-card{overflow:hidden}
+.project-meta{color:#a0a9c2}
+.project-details{border-color:#303b58}
+.project-details h4{color:#e9eaff}
+.tags span,.education-topics span{background:#252d47;color:#c9d0e6}
+.project-number{background:#29264b;color:#c4b6ff}
+.availability-note,.subtle-note{color:#9ca7c0}
+.education-meta{border-color:#303b58}
+.experience-card .pill{background:#29264b;color:#c4b6ff}
+.timeline-marker:before{background:#514a78}.timeline-marker span{background:#151f35}
+.learning-outcome{background:#222541;border-left-color:#aa99f5;color:#d5d9ec}
+.cert-card{background:linear-gradient(145deg,#18223a,#131c30)}
+.contact-section{background:radial-gradient(circle at 50% 0%,#29234f 0,#0a1020 62%);border-top:1px solid #29334d}
+.contact-section>p:not(.overline){color:#c0c7db}
+.contact-links a{border-color:#4b5275;color:#eceeff}
+.contact-links a:hover{background:#a998f5;border-color:#a998f5;color:#101528}
+footer{background:#070b16;border-color:#252e47;color:#a6aec5}
+footer .brand{color:#fff}
+::selection{background:#8f7ce2;color:#080d1b}
+.skip-link{background:#f1f3ff;color:#0b1020}
+.not-found{color:#f1f3ff}
+.not-found h1{color:#f1f3ff}
+.menu-toggle{background:#151f35;border-color:#39435e}
+.menu-toggle span{background:#f1f3ff}
+.primary-navigation.is-open{background:#10182b;border-color:#303b58;box-shadow:0 18px 28px rgba(0,0,0,.4)}
+.primary-navigation a{color:#d0d6e8}
+.primary-navigation a:hover,.primary-navigation a.is-active{color:#c2b5ff}
+.primary-navigation a{border-color:#29344e}
+/* Keep the project mini-previews legible while harmonizing them with the dark interface. */
+.project-visual{background:linear-gradient(145deg,#202947,#171f38);border-bottom:1px solid #303b58}
+.visual-inventory,.visual-ai,.visual-data,.visual-tableau,.visual-chill,.visual-thermolab{background:linear-gradient(145deg,#222b49,#171f37)}
+.visual-kicker,.visual-caption{color:#c1b5ff}
+.visual-temp{color:#e3e7fb}
+.thermolab-visual,.visual-dashboard,.ai-window,.data-visual,.tableau-visual{background:#f3f2ff;border-color:#d5d0f3}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
