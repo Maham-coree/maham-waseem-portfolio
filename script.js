@@ -52,6 +52,28 @@
     if (emailNote) emailNote.hidden = true;
   }
 
+  // Cinematic but lightweight scroll reveals; content remains visible if unsupported.
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-motion");
+    const revealTargets = document.querySelectorAll(
+      ".section-kicker,.section-heading,.section-grid,.skill-card,.project-card,.timeline,.cert-card,.math-connection,.contact-section .overline,.contact-section h2,.contact-section>p,.contact-links"
+    );
+    revealTargets.forEach((element, index) => {
+      element.classList.add("reveal");
+      if (element.matches(".skill-card,.project-card,.cert-card")) {
+        element.style.setProperty("--reveal-delay", (index % 4) * 75 + "ms");
+      }
+    });
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -45px 0px" });
+    revealTargets.forEach(element => revealObserver.observe(element));
+  }
+
   // Reduced-motion users receive a stable role label instead of a typing effect.
   const roles = ["Aspiring Software Developer", "Data Analytics Enthusiast", "Technology Explorer"];
   const roleElement = document.getElementById("rotating-role");
