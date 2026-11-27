@@ -336,3 +336,18 @@ html{scroll-behavior:smooth}
  .hero-copy>*,.hero-art,.hero:after{animation:none!important}
  .project-card:hover:after{animation:none!important}
 }
+
+
+/* Finite Group Explorer — abstract algebra project preview */
+.visual-groups{background:radial-gradient(circle at 50% 45%,#34305f 0,#202847 56%,#171f38 100%)}
+.group-lab-preview{width:78%;max-width:370px;min-height:132px;display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:15px;padding:15px;background:rgba(13,19,39,.82);border:1px solid #5c568a;border-radius:9px;box-shadow:0 18px 42px rgba(0,0,0,.35);transform:rotate(-2deg);transition:transform .55s cubic-bezier(.2,.75,.25,1),box-shadow .35s}
+.group-orbit{width:106px;height:106px;border:1px solid #887be0;border-radius:50%;position:relative;display:grid;place-items:center;margin:auto;box-shadow:0 0 25px rgba(160,143,255,.14),inset 0 0 24px rgba(160,143,255,.08)}
+.group-orbit:before,.group-orbit:after{content:"";position:absolute;inset:13px;border:1px dashed rgba(184,168,255,.55);border-radius:50%;transform:rotate(55deg)}
+.group-orbit:after{transform:rotate(-55deg)}
+.group-orbit span,.group-orbit i,.group-orbit b,.group-orbit em{position:absolute;display:grid;place-items:center;width:23px;height:23px;border:1px solid #9384ed;border-radius:50%;background:#25264b;color:#eeeaff;font:700 .58rem "Manrope";font-style:normal}
+.group-orbit span{top:-7px;left:41px}.group-orbit i{right:-6px;top:40px}.group-orbit b{bottom:-6px;left:41px}.group-orbit em{left:-6px;top:40px}
+.group-table{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;text-align:center;font:700 .52rem "Manrope";color:#bcb4f5}
+.group-table span,.group-table b{min-height:21px;display:grid;place-items:center;border-radius:3px;background:#252b4b}
+.group-table b{background:#38345f;color:#f0edff;border:1px solid rgba(184,168,255,.14)}
+.project-card:hover .group-lab-preview{transform:translateY(-5px) rotate(0) scale(1.035);box-shadow:0 22px 48px rgba(0,0,0,.45),0 0 30px rgba(153,132,255,.16)}
+@media(max-width:560px){.group-lab-preview{width:84%;gap:9px;padding:12px}.group-orbit{width:94px;height:94px}}
